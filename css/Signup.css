@@ -1,0 +1,153 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p{
+  margin-top: 2px;
+  text-align: right;
+  font-size: 13px;
+  margin-bottom: 20px;
+  width: 100%;
+  color: red;
+}
+
+/* Body Styling */
+body {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Left Section - Form */
+.left-section {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+/* Right Section - Image */
+.right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffdae1;
+}
+
+/* Form Container */
+.form-position {
+  background-color: #ffdae1;
+  padding: 60px;
+  border-radius: 120px;
+  box-shadow: 0 10px 20px rgba(255, 148, 168, 0.9);
+  width: 600px;
+  height: 620px;
+}
+
+/* Form Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #333;
+}
+
+/* User Icon */
+#user {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px;
+}
+
+/* Labels */
+label {
+  margin-bottom: 5px; /* Space between label and input field */
+  font-size: 16px;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 10px 15px; /* Adjust padding inside inputs */
+  margin-bottom: 15px; /* Add spacing below inputs */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* Button Container */
+.button-container {
+  display:flex;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cancel Button */
+.button {
+  background-color: pink;
+  color: black;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Confirm Button */
+.button2 {
+  background-color: white;
+  color: black;
+  border: 1px solid #a30003;
+  padding: 12px 30px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+.button:hover, .button2:hover {
+  transform: scale(1.05);
+}
+
+/* Laksa Image */
+#laksa {
+  width: 500px;
+  height: auto;
+}
+
+/* Center Role Dropdown Between Login and Signup Buttons */
+/* Adjust Form Padding */
+.form-position {
+  padding: 40px 30px; /* Reduce padding for better compactness */
+  gap: 20px; /* Space between elements */
+}
+
+.button-container {
+  margin-top: 10px; /* Space above the container */
+  display: flex;
+  justify-content: space-between; /* Space out elements */
+  align-items: center; /* Align items vertically */
+  gap: 10px; /* Space between buttons and dropdown */
+}
+
+/* Role Selection Dropdown */
+/* Role Selection Dropdown */
+#role {
+  width: auto; /* Allow the dropdown width to adjust automatically */
+  padding: 10px 30px; /* Match padding with the buttons */
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Match the border radius of the buttons */
+  font-size: 16px;
+  background-color: #f9f9f9;
+  text-align: center; /* Center-align text inside the dropdown */
+  cursor: pointer;
+}

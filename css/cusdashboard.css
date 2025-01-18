@@ -1,0 +1,325 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+/* Top Section */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffe6e6;
+    border-radius: 120px;
+    width: 1400px;
+    box-shadow: 0 4px 10px rgba(255, 148, 168, 0.9);
+    margin-left: 4%;
+    margin-right: auto;
+    
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    clip-path: circle(50%);
+}
+
+nav ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    padding: 20px 50px;
+    border-radius: 50px;
+    background-color: #f4b0b0;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff9999;
+}
+
+.profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    object-fit: cover;
+    transition: 0.3s ease;
+    cursor: pointer;
+  
+}
+
+.profile:hover{
+    transform: scale(1.1); /*enlarge on hover*/
+    background-color: #ff9999;
+}
+
+/* Distance between sections */
+.section-spacing {
+    margin-top: 40px;
+}
+
+/* Bottom Section */
+.bottom-section {
+    background-color: #ffe6e6;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(255, 148, 168, 0.9);
+    width: 1200px;
+    height: auto;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+.welcome {
+    position: absolute;
+    left: 0px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 360px;
+    color: #ff9999;
+    font-size: 20px;
+}
+/* ---------------------------- this is search buton-----------------------*/
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-bar {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#search-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+.categories-title, .popular-dishes-title {
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.category-item {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+}
+
+/* Popular Dishes */
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 120px;
+    padding: 3%;
+    
+}
+
+.dish-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 148, 168, 0.9);
+    text-align: center;
+    padding: 20px 30px;
+    position: relative;
+    
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.add-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 20%;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #ffaa00;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.category-item {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-item:hover {
+    background-color: #f4b0b0;
+    color: white;
+}
+
+.dish-grid .dish-item {
+    display: none;
+}
+
+#popular-dishes-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#no-results {
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    color: #f00;
+    margin-top: 20px;
+}
+
+.search-container {
+display: flex;
+align-items: center;
+
+}
+
+#search-bar {
+flex: 1;
+padding: 10px 120px;
+border: 1px solid #ccc;
+border-radius: 10px;
+outline: none;
+}
+
+#search-button {
+background-color: transparent;
+border: none;
+padding: 0;
+margin: 0;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.search-icon {
+width: 24px;
+height: 24px;
+}
+
+
+/* Image Placeholder in Dish Item */
+.image-placeholder {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+

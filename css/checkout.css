@@ -1,0 +1,183 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+   
+}
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffe6e6;
+    border-radius: 120px;
+    width: 1400px;
+    box-shadow: 0 4px 10px rgba(255, 148, 168, 0.9);
+    margin-left: 4%;
+    margin-right: auto;
+    
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    clip-path: circle(50%);
+}
+
+nav ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    padding: 20px 50px;
+    border-radius: 50px;
+    background-color: #f4b0b0;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff9999;
+}
+
+.profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    object-fit: cover;
+    transition: 0.3s ease;
+    cursor: pointer;
+  
+}
+
+.profile:hover{
+    transform: scale(1.1); /*enlarge on hover*/
+    background-color: #ff9999;
+}
+
+/* Distance between sections */
+.section-spacing {
+    margin-top: 40px;
+}
+
+
+
+
+.checkout-title {
+text-align:center ;
+margin-top: 20px;
+
+}
+
+
+
+.checkout-section {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.left-panel, .right-panel {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel {
+    width: 60%;
+}
+
+.right-panel {
+    width: 35%;
+    text-align: center;
+}
+
+.laksa-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Image Styles for Checkout */
+.laksa-item img {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    margin-right: 10px; /* Add space between the image and text */
+    object-fit: cover; /* Ensure the image covers its container proportionally */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better appearance */
+}
+
+.payment-options button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ff9999;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-options button:hover {
+    background-color: #ff4d4d;
+}
+
+.direct-cart {
+    width: 100%;
+    padding: 10px;
+    background-color: #ccc;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.direct-cart:hover {
+    background-color: #fff;
+}
+
+.cancel-btn {
+width: 100%;
+padding: 10px;
+margin-top: 15px;
+background-color: #ccc;
+color: black;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s;
+}
+
+.cancel-btn:hover {
+background-color: #aaa;
+}

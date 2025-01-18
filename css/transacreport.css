@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffe6e6;
+    border-radius: 120px;
+    width: 1400px;
+    box-shadow: 0 4px 10px rgba(255, 148, 168, 0.9);
+    margin-left: 4%;
+    margin-right: auto;
+
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    clip-path: circle(50%);
+}
+
+nav ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    padding: 20px 50px;
+    border-radius: 50px;
+    background-color: #f4b0b0;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff9999;
+}
+
+.profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    object-fit: cover;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+
+.profile:hover{
+    transform: scale(1.1); /*enlarge on hover*/
+    background-color: #ff9999;
+}
+
+
+/* Top Section */
+.top-section {
+    flex: 0 0 auto;
+}
+
+/* Bottom Section */
+.bottom-section {
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    column-count: 2;
+}
+
+/* Sidebar Section */
+.sidebar {
+    width: 250px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    position: fixed;
+    top: 130px;
+    left: 20px;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a.active, .sidebar a:hover {
+    background-color: #ffe6e6;
+    font-weight: bold;
+}
+
+.container {
+    width: 70%;
+    margin: 20px 250px;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: relative;
+    left: 120px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border: 1px solid white;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: left;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.rejected {
+    color: red;
+    font-weight: bold;
+}
+
+.pending {
+    color: orange;
+    font-weight: bold;
+}
+
+ /* Dropdown Styling */
+    .page-selector {
+    text-align: left;
+    margin-top: 10px;
+ }
+
+
+ .page-selector select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Space above the pagination */
+}
+
+.pagination-container form {
+    display: flex;
+    gap: 10px; /* Spacing between the buttons and select dropdown */
+}
+
+.pagination-container button,
+.pagination-container select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f4b0b0;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-container button:hover,
+.pagination-container select:hover {
+    background-color: #ff9999;
+}
+
+.pagination-container button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
