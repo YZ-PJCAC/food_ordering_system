@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'customer') {
     header("Location: ../index.php");
     exit();
 }
-//testing comment
+
 $user_id = $_SESSION['user_id'];
 $selectedItems = $_POST['selected_items'] ?? [];
 
