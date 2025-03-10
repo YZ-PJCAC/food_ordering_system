@@ -9,7 +9,7 @@
 3. Admin Dashboard
 <img src="https://raw.githubusercontent.com/YZ-PJCAC/food_ordering_system/refs/heads/main/my_project_overview/admin dashboard.PNG"/>
 
-4. Manage Porduct
+4. Manage Porduct (add, update, deleted, invisible/visible outdated product)
 <img src="https://raw.githubusercontent.com/YZ-PJCAC/food_ordering_system/refs/heads/main/my_project_overview/manage product.PNG"/>
 
 5. Monthly Sales
