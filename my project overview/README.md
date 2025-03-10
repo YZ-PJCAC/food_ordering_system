@@ -1,8 +1,7 @@
 # Project Screenshot
 
 1. Login
-
-2. Register 
+https://raw.githubusercontent.com/YZ-PJCAC/food_ordering_system/refs/heads/main/my%20project%20overview/login.PNG
 
 3. Admin Dashboard
 
